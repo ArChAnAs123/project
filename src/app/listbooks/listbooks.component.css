@@ -1,0 +1,147 @@
+svg.material-icons {
+    height: 24px;
+    width: auto;
+  }
+
+  svg.material-icons:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  
+  .card svg.material-icons path {
+    fill: rgb(17, 17, 17);
+  }
+ #head{
+   margin-left: 40px;
+ }
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 16px;
+    color:#0c0c0c;
+    font-size: 1pc;
+    height: auto;
+    
+    
+  }
+ .card-container span{color: #050a0f;}
+  .card {
+    all: unset;
+    border-radius: 4px;
+    border: 1px solid #eee;
+    background-color:rgba(40, 165, 102, 0.897);
+    height: 40px;
+    width: 90px;
+    margin: 0 8px 16px;
+    
+    display: inline-flex;
+    grid-template-columns: 60% 60% 60%;
+    grid-row-gap: 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    line-height: 24px;
+  }
+
+  .card-container .card:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .card.card-small {
+    height: 40px;
+    width: 160px;
+  }
+
+  .card-container .card:not(.highlight-card) {
+    cursor: pointer;
+  }
+
+  .card-container :hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+  }
+
+  .card-container :hover .material-icons path {
+    fill: rgb(105, 103, 103);
+  }
+
+  
+
+ .container{
+   background-color: #d0f0b2;
+ }
+  
+
+  a:hover,a:active {
+    color: #e1eca3;
+  }
+
+  
+ 
+  @media screen and (min-width: 600px) {
+
+ .section1{
+   display:grid;
+   grid-template-columns: 20% 20% 20% 20% 20%;
+   grid-auto-rows: auto;
+   grid-column: span 2;
+  
+    
+      
+    
+    
+    
+ }
+}
+
+.display{
+  display: flex;
+  flex-direction: row;
+}
+  
+ 
+ 
+
+    
+  
+
+#fiction{
+  margin-top: 120px;
+}
+
+.displayfiction{
+    width: 100px;
+    display: inline-block;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 40px;
+    vertical-align: top;
+    margin-left: 50px;
+}
+
+
+.cardexp {
+  width: 150px;
+  
+  margin: 20px auto auto auto;
+  overflow: hidden;
+  
+ 
+}
+
+.expandable-content {
+  overflow: hidden;
+  transition: height 0.66s ease-out;
+  display: inline-block;
+}
+
+mat-card-title{
+
+  font-size: 3.5em;
+}
+#dispfict{
+  display:inline-block;
+  padding-right:50px ;
+}

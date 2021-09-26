@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="row justify-content-center">
+      <div class="col-md-4 offset-md-4 form-div">
+          <form id="form-register">
+              <h3 class="text-center">Register</h3>
+              <div class="form-group">
+                  <label for="username">Username</label>&nbsp;&nbsp;
+                  <input [(ngModel)]="this.user.username"type="text" name="username" class= "form-control form-control-lg"
+                  placeholder="enter the user name"/>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input [(ngModel)]="this.user.email" type="email" name="email   " class= "form-control form-control-lg"
+               placeholder="enter the email address"/>
+            </div>
+
+              <div class="form-group">
+                  <label for="password">Password</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <input [(ngModel)]="this.user.password" type="password" name="password" class= "form-control form-control-lg"
+                  placeholder="enter the password"/>
+              </div>
+
+              <br>
+              <br>
+              <div class="form-group m-0">
+                  <button (click)="registerUser()" type="submit" name="submit" form="form-register" class="btn btn-danger btn-block" >
+                      Register
+                  </button>
+              </div>
+          </form>
+      </div>
+  </div>
+</div>

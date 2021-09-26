@@ -1,0 +1,426 @@
+
+<h1 style="text-align: center; font-size: 2PC;">CATEGORIES</h1>
+<div class="container">
+<h2 id="head" style="  font-family: 'Times New Roman', Times, serif;">Select from list of books:</h2>
+  
+  
+  <div class="card-container">
+
+    <div class="blockimg">
+      <div class="section1">
+    <a class="card" target="_self" rel="noopener" href="#latest">
+      
+      <span>LATEST</span>
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>    </a>
+      <a class="card" target="_self" rel="noopener" href="#drama">
+      
+        <span>DRAMA</span>
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>    </a>
+
+
+        <a class="card" target="_self" rel="noopener" href="#fiction">
+      
+          <span>FICTION</span>
+          <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>    </a>
+
+    <a class="card" target="_self" rel="noopener" href="#comedy">
+    
+      <span>COMEDY</span>
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+    </a>
+
+    <a class="card" target="_self" rel="noopener" href="#philosophy">
+    
+      <span>PHILOSOPHY</span>
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>    </a>
+   
+
+    
+    <a class="card" target="_self" rel="noopener" href="#horror">
+      
+      <span>HORROR</span>
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+    </a>
+    <a class="card" target="_self" rel="noopener" href="#thriller">
+      
+      <span>THRILLER</span>
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+    </a>
+    
+    <a class="card" target="_self" rel="noopener" href="#art">
+      
+      <span>ART</span>
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+    </a>
+    <a class="card" target="_self" rel="noopener" href="#science">
+      
+      <span>SCIENCE</span>
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+    </a>
+    <a class="card" target="_self" rel="noopener" href="#toprated">
+       <span>TOP:RATED</span>
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+    </a>
+  </div>
+
+  </div>
+  </div>
+
+</div>
+ 
+ 
+  <h3><p id="fiction"> FICTION</p></h3>
+  
+ <div class="displayfiction"id="dispfict" *ngFor="let product of lists">
+   <span>
+     
+     <img src="{{product.volumeInfo.imageLinks.thumbnail}}" alt="">
+     
+     
+   </span><br>
+   
+    <mat-card class="cardexp">
+      <mat-card-header>
+      
+       
+      </mat-card-header>
+      <mat-card-content>
+       
+        
+        
+         <button  (click)='viewbooks(product)'>Read Book </button>
+      <mat-divider>
+      </mat-divider>
+      </mat-card-content>
+    
+     
+
+      
+        
+     
+    
+    </mat-card>
+  </div>
+    
+      
+        
+  
+   <br>
+   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+   
+  
+
+  <h3><p id="comedy">COMEDY</p></h3>
+  
+  <div class="displayfiction"
+  
+  *ngFor="let product of listscomedy">
+   <span> <img 
+      
+      src="{{ product.volumeInfo.imageLinks.thumbnail }}"
+      alt=""
+     
+    /></span><br>
+   <div>
+    <mat-card class="cardexp">
+      <mat-card-header>
+     
+       
+      </mat-card-header>
+      <mat-card-content>
+       
+        
+        
+        <button  (click)='viewbooks(product)'>Read Book</button>
+      <mat-divider>
+      </mat-divider>
+      </mat-card-content>
+    </mat-card>
+
+    
+      
+        
+  
+   </div>
+   </div>
+
+
+
+
+   <h3><p id="drama">DRAMA</p></h3>
+  
+   <div class="displayfiction"
+   
+   *ngFor="let product of listsdrama">
+    <span> <img 
+       
+       src="{{ product.volumeInfo.imageLinks.thumbnail }}"
+       alt=""
+      
+     /></span><br>
+    <div>
+     <mat-card class="cardexp">
+       <mat-card-header>
+     
+       
+       </mat-card-header>
+       <mat-card-content>
+        
+         
+         
+       <button  (click)='viewbooks(product)'>Read Book</button>
+       <mat-divider>
+       </mat-divider>
+       </mat-card-content>
+     </mat-card>
+ 
+     
+       
+         
+   
+    </div>
+    </div>
+
+
+ 
+  <h3><p id="latest"> LATEST</p></h3>
+  
+  <div class="displayfiction"
+  
+  *ngFor="let product of listslatest">
+   <span> <img 
+      
+      src="{{ product.volumeInfo.imageLinks.thumbnail }}"
+      alt=""
+     
+    /></span><br>
+   <div>
+    <mat-card class="cardexp">
+      <mat-card-header>
+      
+       
+      </mat-card-header>
+      <mat-card-content>
+       
+        
+         <button    (click)='viewbooks(product)'>Read Book</button> 
+      <mat-divider>
+      </mat-divider>
+      </mat-card-content>
+    </mat-card>
+
+    
+      
+        
+  
+   </div>
+   </div>
+  
+  
+  
+   <h3><p id="philosophy"> PHILOSOPHY</p></h3>
+  
+   <div class="displayfiction"
+   
+   *ngFor="let product of listphilosophy">
+    <span> <img 
+       
+       src="{{ product.volumeInfo.imageLinks.thumbnail }}"
+       alt=""
+      
+     /></span><br>
+    <div>
+     <mat-card class="cardexp">
+       <mat-card-header>
+       
+        
+       </mat-card-header>
+       <mat-card-content>
+        
+         
+         
+     <button  (click)='viewbooks(product)' >Read Book</button>
+       <mat-divider>
+       </mat-divider>
+       </mat-card-content>
+     </mat-card>
+ 
+     
+       
+         
+   
+    </div>
+    </div>
+    <h3><p id="horror"> HORROR</p></h3>
+  
+    <div class="displayfiction"
+    
+    *ngFor="let product of listhorror">
+     <span> <img 
+        
+        src="{{ product.volumeInfo.imageLinks.thumbnail }}"
+        alt=""
+       
+      /></span><br>
+     <div>
+      <mat-card class="cardexp">
+        <mat-card-header>
+        
+         
+        </mat-card-header>
+        <mat-card-content>
+         
+          
+          
+           <button  (click)='viewbooks(product)'>Read Book</button>
+        <mat-divider>
+        </mat-divider>
+        </mat-card-content>
+      </mat-card>
+  
+      
+        
+          
+    
+     </div>
+     </div>
+
+
+     <h3><p id="thriller"> THRILLER</p></h3>
+  
+    <div class="displayfiction"
+    
+    *ngFor="let product of listthriller">
+     <span> <img 
+        
+        src="{{ product.volumeInfo.imageLinks.thumbnail }}"
+        alt=""
+       
+      /></span><br>
+     <div>
+      <mat-card class="cardexp">
+        <mat-card-header>
+     
+         
+        </mat-card-header>
+        <mat-card-content>
+         
+          
+          <button (click)='viewbooks(product)'>Read Book</button>
+        <mat-divider>
+        </mat-divider>
+        </mat-card-content>
+      </mat-card>
+  
+      
+        
+          
+    
+     </div>
+     </div>
+
+     <h3><p id="art"> ART</p></h3>
+  
+     <div class="displayfiction"
+     
+     *ngFor="let product of listart">
+      <span> <img 
+         
+         src="{{ product.volumeInfo.imageLinks.thumbnail }}"
+         alt=""
+        
+       /></span><br>
+      <div>
+       <mat-card class="cardexp">
+         <mat-card-header>
+    
+          
+         </mat-card-header>
+         <mat-card-content>
+          
+           
+           
+           <button  (click)='viewbooks(product)'>Read Book</button>
+         <mat-divider>
+         </mat-divider>
+         </mat-card-content>
+       </mat-card>
+   
+       
+         
+           
+     
+      </div>
+      </div>
+      <h3><p id="science">SCIENCE</p></h3>
+  
+      <div class="displayfiction"
+      
+      *ngFor="let product of listscience">
+       <span> <img 
+          
+          src="{{ product.volumeInfo.imageLinks.thumbnail }}"
+          alt=""
+         
+        /></span><br>
+       <div>
+        <mat-card class="cardexp">
+          <mat-card-header>
+     
+           
+          </mat-card-header>
+          <mat-card-content>
+           
+            
+            
+           <button  (click)='viewbooks(product)' >Read Book</button>
+          <mat-divider>
+          </mat-divider>
+          </mat-card-content>
+        </mat-card>
+    
+        
+          
+            
+      
+       </div>
+       </div>
+
+
+       <h3><p id="toprated">TOP RATED</p></h3>
+  
+       <div class="displayfiction"
+       
+       *ngFor="let product of listtoprated">
+
+        
+        <span> <img 
+           
+           src="{{ product.volumeInfo.imageLinks.thumbnail }}"
+           alt=""
+          
+         /></span><br>
+        <div>
+         <mat-card class="cardexp">
+           <mat-card-header>
+          
+            
+           </mat-card-header>
+           <mat-card-content>
+            
+             
+             
+             <button (click)='viewbooks(product)' >Read Book</button>
+           <mat-divider>
+           </mat-divider>
+           </mat-card-content>
+         </mat-card>
+     
+           
+             
+       
+       
+        </div>
+
+  
+  

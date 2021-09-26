@@ -1,0 +1,46 @@
+
+  .toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color:rgb(241, 218, 188);
+    color: rgb(14, 13, 13);
+    font-weight: 800;
+    
+  }
+
+  .toolbar img {
+    margin: 0 16px;
+  }
+
+  .spacer a {
+     padding-left: 40px;
+
+     
+
+  display: inline-block;
+  padding: 8px;
+  
+
+  }
+
+  .spacer a:hover {
+    background-color: rgb(230, 202, 202);
+  }
+
+  .fa{
+    size: 30px;
+    color: black;
+    background-color: rgb(243, 222, 127);
+
+  }
+
+  .searchbar{
+    width:100px;
+    height: 50px;
+    
+  }

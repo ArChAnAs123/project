@@ -1,0 +1,30 @@
+{
+  "register": [
+    {
+      "password": "abc",
+      "username": "1234",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "username": "abcd",
+      "password": "3453556"
+    },
+    {
+      "id": 3,
+      "username": "",
+      "password": "",
+      "email": ""
+    }
+  ],
+  "login": [
+    {
+      "password": "123",
+      "username": "abc",
+      "id": 1
+    }
+  ],
+  "favourites": [],
+  "recommendations": [{"book": "abc",
+    "id":1}]
+}

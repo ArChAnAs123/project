@@ -1,0 +1,17 @@
+.form-container{
+    /* position: absolute; */
+    margin-top: 100px;
+    left: 40%;
+    color: aliceblue;
+    padding: 30px;
+    height: 300px;
+    width: 400px;
+    margin-left: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #000;
+    background-image:url(https://th.bing.com/th/id/OIP.HInCTVUeEowF_q46oNm2bwHaEG?pid=ImgDet&rs=1) ;
+}
+.form-group{
+
+    width: 200px;
+}
